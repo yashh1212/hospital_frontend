@@ -1,0 +1,55 @@
+.submenu.hs_nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fd;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0B103F; /* Adjust the logo color as needed */
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #0B103F;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list li a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%; /* Take full width for mobile */
+    }
+
+    .list li a {
+        width: 100%; /* Full-width links */
+        text-align: center; /* Center text in links */
+        padding: 10px 0; /* Increase padding for touch targets */
+    }
+}

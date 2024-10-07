@@ -1,0 +1,93 @@
+.container_doctor_search{
+    background-color: #F9FBFF;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+._doctor_search{
+    width: 95%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 20px 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding-bottom: 31px;
+    margin: 20px;
+}
+.dct_img img{
+    height: 100px;
+    border-radius: 50%;
+}
+.dct_img{
+    
+    display: inline-block;
+
+}
+.information{
+    /* background-color: blueviolet; */
+    padding: 0 20px;
+}
+.dct_name{
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #f68C42;
+    font-family: "Roboto-Medium", sans-sarif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.dct_name:hover{
+  
+    border-bottom: 1px solid #f68C42;
+}
+.speciality{
+    font-family: "Roboto-Medium", sans-sarif;
+    font-weight: bold;
+    color:black ;
+    font-size:.90rem;
+    margin-bottom: 5px;
+}
+.degree{
+    display: block;
+    color:#262e30;
+    font-family: "Roboto-Medium", sans-sarif;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+
+}
+.location{
+    display: block;
+    color:black ;
+    margin-bottom: 5px;
+
+}
+.hospital_name,.fee{
+    display: block;
+    color:black ;
+    margin-bottom: 5px;
+
+}
+.book_visit{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    font-family: "Roboto-Medium", sans-sarif;
+    background-color: transparent;
+    border: 1px solid #024594;
+    color: #024594;
+    border-radius: 20px;
+}
+.book_visit:hover{
+    background-color: #024594;
+    font-family: "Roboto-Medium", sans-sarif;
+    color: #fff;
+    border-radius: 20px;
+}

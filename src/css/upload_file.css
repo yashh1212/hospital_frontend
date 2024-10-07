@@ -1,0 +1,53 @@
+.main_container_uploa_file {
+    margin: 50px auto;
+    padding: 20px;
+    width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main_container_uploa_file label{
+    color: #044597;
+    font-family: 'Roboto-Medium';
+}
+
+.select_file {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.select_file::-webkit-file-upload-button{
+    border: none;
+    font-family: 'Roboto-Medium';
+    background-color: transparent;
+    border-bottom: 1px solid #F68C42;
+    margin-right: 30px;
+    font-size: .9rem;
+}
+.input_text {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main_container_uploa_file button {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Roboto-Medium';
+    background-color: #F68C42;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main_container_uploa_file button:hover {
+    background-color: #d37102;
+}

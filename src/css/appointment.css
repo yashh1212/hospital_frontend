@@ -1,0 +1,226 @@
+.appointment_container_mian{
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 0 150px;
+    background: linear-gradient(-235deg, rgb(229, 243, 255) 0%, rgb(250, 253, 255) 40%, white 70%, rgb(229, 243, 255) 100%);
+
+}
+.Doctor_name, .Speciality,.arrea_of_expertise_heading{
+    background-color: transparent;
+    color: rgb(2, 69, 148);
+    font-family: "Roboto-Medium", sans-sarif;
+
+
+}
+ 
+.doctor_profile{
+    padding: 20px;
+}
+.Doctor_name{
+    margin-bottom: 15px;
+ 
+
+}
+.Speciality{
+    margin-bottom: 30px;
+ 
+}
+.Education{
+    margin-bottom: 30px;
+    font-size: 1rem;
+ }
+.arrea_of_expertise_heading{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-family: "Roboto-Medium", sans-sarif;
+
+}
+ 
+ 
+.appointment_details,.patient_details h4{
+    color: rgb(2, 69, 148);
+    font-family: "Roboto-Medium", sans-sarif;
+    font-size: 1.5rem;
+}
+.month{
+    display: flex;
+    background: rgba(2, 69, 139, .05);
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+.left_clickk {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 35px;
+  }
+  
+.right_click {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 35px;
+    
+  }
+.cal_year{
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateX(1010%);
+    top: 28%;
+    color: #024594;
+    font-family: "Roboto-Medium", sans-sarif;
+
+    font-size: 1rem;
+}
+.cal_month{
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateX(591%);
+    top: 28%;
+    color: #024594;
+    font-family: "Roboto-Medium", sans-sarif;
+
+    font-size: 1rem;
+}
+.appointment_details,.patient_details{
+    
+    width:40%;
+    height: auto;
+    /* margin: auto; */
+    background: #fff;
+    transition: all .3s;
+    padding: 25px;
+    /* border-collapse: collapse; */
+    border-radius: 20px;
+    font-family: "Roboto-Medium", sans-sarif;
+}
+.appointment_details{
+    border:1px solid #f68c42;
+   border-left: none;
+   border-radius:0 20px 20px 0;
+}
+.patient_details{
+    border-radius: 20px 0 0 20px;
+    border:1px solid #f68c42;
+    border-right: none;
+}
+.appointment_details label{
+    font-family: "Roboto-Medium", sans-sarif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+ 
+.patient_details input,select{
+    display: block;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #f68c42;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.appointment_details input#date{
+    display: block;
+    font-family: "Roboto-Medium", sans-sarif;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #f68c42;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.patient_details button{
+    background-color: #fff;
+    border-radius: 20px;
+    border:1px solid #024594;
+    color: #024594;
+    font-family: "Roboto-Medium", sans-sarif;
+    width: 150px;
+    height: 30px;
+    margin-top: 17px;
+    margin-left: 50px;
+}
+.patient_details button:hover{
+    background-color: #024594;
+    border-radius: 20px;
+    border:1px solid #024594;
+    font-family: "Roboto-Medium", sans-sarif;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+}
+
+form .patient_details{
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    column-width: 50%;
+    column-gap: 30px;
+}
+.appointmentcard{
+    display: flex;
+    margin-top: 50px;
+    gap:0px;
+    width: auto;
+    padding: 0;
+    /* border: 1px solid #f68c42; */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+ 
+.slot{
+    margin: auto;
+}
+.slot ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px;
+    row-gap: 10px;
+    column-gap: 31px;
+}
+.slot ul li a{ 
+    padding: 10px 0px;
+    gap: 20px;
+    display: flex;
+    border-radius: 120px;
+    border: #024594;
+    font-size: .7rem;
+    /* padding: 20px; */
+    background-color: antiquewhite;
+    width: 140px;
+    /* height: 31px; */
+    text-align: center;
+    justify-content: center;
+    cursor: default;
+}
+.appointment_details .slot{
+    color: rgb(2, 69, 148);
+    font-family: "Roboto-Medium", sans-sarif;
+    font-size: 1.5rem;
+}
+
+.slot .selected{
+    background: linear-gradient(-90deg, #f68c42 0%, #f68c42 40%, #fdad75 100%);
+    border-color: #f68c42;
+    text-emphasis-color: #fff;
+    color: #fff;
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  .slot li a{
+   padding: 1.5px;
+  }
+  .slot li a:hover{
+ 
+   text-decoration: none;
+   color: #024594;
+  }
