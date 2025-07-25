@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Body from './components/Body';
 import Footer from './components/footer';
-import Find_doctor from './components/find_doctor';
 import Book_appointment from './components/Book_appointment';
 import Hospital_login from './components/Hospital_login';
 import User_login from './components/User_login';
@@ -93,7 +92,7 @@ function App() {
         <div className="header">
           <Navbar />
         </div>
-        {loading ? <Loader /> : null}
+        {/* {loading ? <Loader /> : null} */}
 
         <Routes>
           <Route exat path="/" element={<Body />} />
@@ -242,7 +241,7 @@ function App() {
             exat
             path="/Services"
             element={
-              <Services callback={get_speciality} setloading={setloading} />
+              <Services set_speciality={get_speciality} setloading={setloading} />
             }
           />
           <Route
