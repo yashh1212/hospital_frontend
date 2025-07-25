@@ -36,7 +36,7 @@ export default function Manage_apt() {
     setLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:4000/hospital/appointment-list",
+        "https://hospital-backend-coral.vercel.app/hospital/appointment-list",
         {
           headers: {
             token: sessionStorage.getItem("hs_token"),
@@ -66,7 +66,7 @@ export default function Manage_apt() {
     setIsDeleting(id);
     try {
       const response = await fetch(
-        `http://localhost:4000/hospital/delete-appointment?id=${id}`,
+        `https://hospital-backend-coral.vercel.app/hospital/delete-appointment?id=${id}`,
         {
           method: "DELETE",
           headers: {

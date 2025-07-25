@@ -18,7 +18,7 @@ export default function DctListSpeciality(props) {
             
             try {
                 setIsLoading(true);
-                const response = await fetch(`http://localhost:4000/doctor/speciality_search?speciality=${props.speciality}`, {
+                const response = await fetch(`https://hospital-backend-coral.vercel.app/doctor/speciality_search?speciality=${props.speciality}`, {
                     headers: {
                         'token': sessionStorage.getItem('token')
                     }
@@ -42,7 +42,7 @@ export default function DctListSpeciality(props) {
             const dct_id = event.target.id;
             console.log(dct_id);
             props.callback(event.target.id);
-            const response = await fetch(`http://localhost:4000/doctor/doctor_information?doctor_id=${dct_id}`, {
+            const response = await fetch(`https://hospital-backend-coral.vercel.app/doctor/doctor_information?doctor_id=${dct_id}`, {
                 headers: {
                     'token': sessionStorage.getItem('token')
                 }

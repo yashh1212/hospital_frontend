@@ -31,7 +31,7 @@ export default function DoctorSearch(props) {
       props.callback(event.target.id);
       
       const response = await fetch(
-        `http://localhost:4000/doctor/doctor_information?doctor_id=${dct_id}`,
+        `https://hospital-backend-coral.vercel.app/doctor/doctor_information?doctor_id=${dct_id}`,
         {
           headers: {
             token: sessionStorage.getItem("token"),

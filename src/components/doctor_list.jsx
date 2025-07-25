@@ -32,7 +32,7 @@ function Doctor_list() {
       async function get_data() {
         setLoading(true);
         try {
-          const response = await fetch("http://localhost:4000/doctor/doctot-list", {
+          const response = await fetch("https://hospital-backend-coral.vercel.app/doctor/doctot-list", {
             headers: {
               'token': token
             }

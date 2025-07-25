@@ -55,7 +55,7 @@ export default function Book_appointment({ callback, setloading }) {
 
     try {
       const response = await fetch(
-        `http://localhost:4000/doctor/search_doctor?speciality=${selectedSpecialty}&doctor_name=${searchTerm}`,
+        `https://hospital-backend-coral.vercel.app/doctor/search_doctor?speciality=${selectedSpecialty}&doctor_name=${searchTerm}`,
         {
           method: "get",
           headers: {

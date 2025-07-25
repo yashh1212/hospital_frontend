@@ -26,7 +26,7 @@ export default function User_login(props) {
       console.log(data);
 
       const response = await fetch(
-        "http://localhost:4000/user/signUp",
+        "https://hospital-backend-coral.vercel.app/user/signUp",
         {
           method: "post",
           headers: { "content-type": "application/json" },

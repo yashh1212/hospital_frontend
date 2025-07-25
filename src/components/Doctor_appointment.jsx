@@ -59,7 +59,7 @@ export default function Doctor_appointment(props) {
 
     try {
       const response = await fetch(
-        "http://localhost:4000/appointment/generate-paymentID",
+        "https://hospital-backend-coral.vercel.app/appointment/generate-paymentID",
         {
           headers: {
             token: sessionStorage.getItem("token"),
@@ -88,7 +88,7 @@ export default function Doctor_appointment(props) {
           // toast.success("Payment successful!");
 
           const api_response = await fetch(
-            "http://localhost:4000/appointment/appointment-confirm",
+            "https://hospital-backend-coral.vercel.app/appointment/appointment-confirm",
             {
               method: "POST",
               headers: {

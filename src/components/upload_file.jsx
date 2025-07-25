@@ -93,7 +93,7 @@ export default function Upload_file() {
         formData.append('patient_id', patient_id);
 
         try {
-            const response = await fetch(`http://localhost:4000/upload/upload_file`, {
+            const response = await fetch(`https://hospital-backend-coral.vercel.app/upload/upload_file`, {
                 method: "POST",
                 headers: {
                     "token": sessionStorage.getItem("hs_token"),

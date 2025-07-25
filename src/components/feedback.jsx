@@ -82,7 +82,7 @@ export default function Feedback() {
     };
 
     try {
-      const response = await fetch("https://hospital-backend-vri9.vercel.app/feedback/submit_feedback", {
+      const response = await fetch("https://hospital-backend-coral.vercel.app/feedback/submit_feedback", {
         method: "POST",
         headers: {
           'token': sessionStorage.getItem('token'),

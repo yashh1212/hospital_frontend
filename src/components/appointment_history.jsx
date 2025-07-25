@@ -32,7 +32,7 @@ export default function Appointment_history(props) {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `http://localhost:4000/appointment/appointment-history`, {
+          `https://hospital-backend-coral.vercel.app/appointment/appointment-history`, {
             headers: {
               'token': sessionStorage.getItem('token')
             },
